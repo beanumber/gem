@@ -15,6 +15,7 @@ clean_gem <- function(x) {
             "omexport", "TEAISIC4_1D", "EB_ISIC4_1D",
             "sunowjob", "suyr5job", "omnowjob", "omyr5job",
             "suexport", "busang", "BAFUNDUS", "BUSANGVL", "barel",
+            "SUBOANW", "BABYBUSO",
             "barel_5c", "easystart", "nbgoodc", "nbstatus", "nbmedia",
             "TEAEXPST", "GEMEDUC", "UNEDUC", "hhsize",
             #          "TEA16", "TEA16OPP", "TEA16NEC",
