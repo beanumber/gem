@@ -24,10 +24,12 @@ clean_gem <- function(x) {
             "knowent", "opport", "suskill", "fearfail",
             "FUTSUPNO", "ESTBBUSO", "DISCENyy", "EXIT_RS3")
   out <- x %>%
-    select(one_of(vars)) %>%
-    mutate(UNEDUC = as.character(UNEDUC),
-           BUSANGVL = as.character(BUSANGVL),
-           country = as.character(country)) %>%
+    select(any_of(vars)) %>%
+    mutate(
+      UNEDUC = as.character(UNEDUC),
+      BUSANGVL = as.character(BUSANGVL),
+      country = as.character(country)
+    ) %>%
     tibble::as_tibble() %>%
     filter(!is.na(gender))
   return(out)

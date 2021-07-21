@@ -15,6 +15,7 @@ theme_gem(base_size = 12, base_family = "Helvetica", ...)
 Theming
 }
 \examples{
+if (require(ggplot2)) {
 p <- ggplot(mtcars, aes(x = hp, y = mpg, color = factor(cyl))) +
   geom_point() + facet_wrap(~ am) + geom_smooth()
 p + theme_grey()
@@ -29,4 +30,5 @@ q <- ggplot(countries, aes(x = country, y = tea_yy_pct)) +
 q + theme_gem()
   # workaround!
 q + theme_gem(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1, size = 8))
+}
 }

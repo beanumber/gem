@@ -1,6 +1,6 @@
 Package: gem
 Title: Working with GEM microdata
-Version: 0.0.0.9004
+Version: 0.0.1.9000
 Authors@R: 
     person(given = "Benjamin S.",
            family = "Baumer",
@@ -10,8 +10,12 @@ Authors@R:
 Description: Facilitates aggregation of GEM microdata
 Imports:
     dplyr,
-    ggplot2
-License: What license it uses
+    ggplot2,
+    haven,
+    tibble
+License: GPL-3
 Encoding: UTF-8
-LazyData: true
+LazyData: false
 RoxygenNote: 7.1.1
+Depends: 
+    R (>= 3.50)
