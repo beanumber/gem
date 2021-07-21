@@ -13,8 +13,6 @@ bind_gem(x)
 fct_gem(x)
 }
 \arguments{
-\item{x}{a data frame of raw GEM microdata}
-
 \item{x}{a list of GEM data frames}
 }
 \description{

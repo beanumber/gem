@@ -7,7 +7,7 @@
 theme_gem(base_size = 12, base_family = "Helvetica", ...)
 }
 \arguments{
-\item{base_size}{base font size}
+\item{base_size}{base font size, given in pts.}
 
 \item{base_family}{base font family}
 }
