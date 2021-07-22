@@ -15,7 +15,7 @@ sav <- dir_info("~/Data/gem/", regexp = ".sav$") %>%
 
 gem <- sav %>%
   pull(path) %>%
-#  head(2) %>%
+#  tail(2) %>%
   map(gem::read_gem_data) %>%
   map(gem::clean_gem) %>%
   set_names(sav$gem_name)

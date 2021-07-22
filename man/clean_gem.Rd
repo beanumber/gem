@@ -3,14 +3,17 @@
 \name{clean_gem}
 \alias{clean_gem}
 \alias{bind_gem}
-\alias{fct_gem}
+\alias{fct_gem_2019}
+\alias{fct_gem_2021}
 \title{Clean and tidy raw GEM data}
 \usage{
 clean_gem(x)
 
 bind_gem(x)
 
-fct_gem(x)
+fct_gem_2019(x)
+
+fct_gem_2021(x)
 }
 \arguments{
 \item{x}{a list of GEM data frames}

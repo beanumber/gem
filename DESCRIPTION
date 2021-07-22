@@ -1,6 +1,6 @@
 Package: gem
 Title: Working with GEM microdata
-Version: 0.0.1.9000
+Version: 0.0.1.9001
 Authors@R: 
     person(given = "Benjamin S.",
            family = "Baumer",
@@ -10,8 +10,8 @@ Authors@R:
 Description: Facilitates aggregation of GEM microdata
 Imports:
     dplyr,
+    foreign,
     ggplot2,
-    haven,
     tibble
 License: GPL-3
 Encoding: UTF-8

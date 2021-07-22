@@ -10,7 +10,7 @@
 read_gem_data <- function(file, ...) {
   # Note that haven is faster but returns fewer columns
   file %>%
-    haven::read_sav(...)
-#    foreign::read.spss(to.data.frame = TRUE) %>%
-#    tibble::as_tibble()
+#    haven::read_sav(...)
+    foreign::read.spss(to.data.frame = TRUE) %>%
+    tibble::as_tibble()
 }

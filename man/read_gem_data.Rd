@@ -9,7 +9,7 @@ read_gem_data(file, ...)
 \arguments{
 \item{file}{path to a SAV file}
 
-\item{arguments}{passed to \code{\link[haven]{read_sav}}
+\item{...}{arguments passed to \code{\link[haven]{read_sav}}
 \dontrun{
 files <- fs::dir_ls("~/Data/gem", regexp = ".sav$")
 gem_data <- read_gem_data(files[1])

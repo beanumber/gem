@@ -22,7 +22,9 @@ p + theme_grey()
 p + theme_gem(axis.text.x = element_text(angle = 45, hjust = 1, size = 8))
 p + theme_gem(panel.grid.minor = element_blank())
 
-countries <- gem_2018 \%>\%
+if (require(dplyr)) {
+data(gem2018)
+countries <- gem2018 \%>\%
   group_by(country) \%>\%
   summarize_tea()
 q <- ggplot(countries, aes(x = country, y = tea_yy_pct)) +
@@ -30,5 +32,6 @@ q <- ggplot(countries, aes(x = country, y = tea_yy_pct)) +
 q + theme_gem()
   # workaround!
 q + theme_gem(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1, size = 8))
+}
 }
 }

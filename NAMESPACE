@@ -2,7 +2,8 @@
 
 export(bind_gem)
 export(clean_gem)
-export(fct_gem)
+export(fct_gem_2019)
+export(fct_gem_2021)
 export(read_gem_data)
 export(summarize_tea)
 export(theme_gem)
