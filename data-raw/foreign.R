@@ -10,7 +10,7 @@ sav <- dir_info("~/Data/gem/", regexp = ".sav$") %>%
     file_rda = paste0("gem_name", ".rda")
   )
 
-# gem2015 <- gem::read_gem_data(sav$path[1])
+# gem2020 <- gem::read_gem_data(sav$path[6])
 # lobstr::obj_size(gem2015) / 1024^2
 
 gem <- sav %>%
