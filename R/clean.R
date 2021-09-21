@@ -44,7 +44,7 @@ clean_gem <- function(x) {
                  "DISCEN20",
                  "EXIT_RS",
                  "TEAISIC4_6",
-                 "TEA20JNW    ",
+                 "TEA20JNW",
                  "TEA20J5Y",
                  "TEANEWPROD",
                  "TEAEXPST",
@@ -128,8 +128,10 @@ fct_gem_2019 <- function(x) {
       income_level = factor(CAT_Income3, levels = income_levels),
       Region = as.character(CAT_region6),
       TEAyy = tolower(TEAyy),
-      age9c = factor(age9c,
-                     levels = c("18-24", "25-34", "35-44", "45-54", "55-64", "65-120", NA)),
+      age9c = factor(
+        age9c,
+        levels = c("18-24", "25-34", "35-44", "45-54", "55-64", "65-120", NA)
+      ),
       TEAyyNEC = tolower(TEAyyNEC),
       TEAyyOPP = tolower(TEAyyOPP)
     )

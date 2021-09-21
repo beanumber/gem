@@ -12,6 +12,8 @@ countries_2020 <- gem2020 %>%
   group_by(country) %>%
   summarize(N = n(), last_year = max(yrsurv))
 
+## Unnecessary, since we're only using 2020 data
+
 countries_2019 <- gem2019 %>%
   group_by(country) %>%
   summarize(N = n(), last_year = max(yrsurv))
@@ -46,7 +48,7 @@ setdiff(names(gem_2019_supplement), names(gem2020))
 setdiff(names(gem2020), names(gem_2019_supplement))
 
 
-gem_womens_2021 <- gem_womens_2021 %>%
+gem_womens_2021 <- gem2020 %>%
   rename(year = yrsurv) %>%
 #  inner_join(select(countries, country, year = last_year), by = c("country", "year")) %>%
   fct_gem_2021()
