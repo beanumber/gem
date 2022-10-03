@@ -82,6 +82,7 @@ clean_gem <- function(x) {
     "REGION_4",
     "WBinc3rev",
     "WBinc_3",
+    "WBINC_4",
     "female",
     "age3c",
     "GEMEDUC",

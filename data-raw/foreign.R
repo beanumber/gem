@@ -17,7 +17,7 @@ gem <- sav |>
   pull(path) |>
   tail(1) |>
   map(gem::read_gem_data) |>
-#  map(gem::clean_gem) |>
+  map(gem::clean_gem) |>
   set_names(sav$gem_name[7])
 
 # map2(names(gem), gem, ~assign(.x, .y))
