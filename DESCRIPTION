@@ -1,6 +1,6 @@
 Package: gem
 Title: Working with GEM microdata
-Version: 0.0.1.9003
+Version: 0.0.1.9004
 Authors@R: 
     person(given = "Benjamin S.",
            family = "Baumer",
