@@ -220,3 +220,31 @@ fct_gem_2021 <- function(x) {
 
   return(out)
 }
+
+
+#' @export
+#' @rdname clean_gem
+
+fct_gem_2022 <- function(x) {
+
+  # Fix factor levels
+  uneduc_levels <- c("Pre-primary education",
+                     "Primary education or first stage of basic education",
+                     "Lower  secondary or second stage of basic education",
+                     "(Upper) secondary education",
+                     "Post-secondary non-tertiary education",
+                     "First stage of tertiary education",
+                     "Second stage of tertiary education", -2, 7, 8)
+
+  out <- x %>%
+    mutate(
+      # year = parse_number(year),
+      UNEDUC = gsub("-1", NA, UNEDUC),
+      uneduc = factor(UNEDUC, levels = uneduc_levels),
+      Region = REGION_4,
+      #      TEAyyNEC = tolower(TEAyyNEC),
+      #      TEAyyOPP = tolower(TEAyyOPP)
+    )
+
+  return(out)
+}
