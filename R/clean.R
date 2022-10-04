@@ -243,7 +243,7 @@ fct_gem_2022 <- function(x) {
       # year = parse_number(year),
       UNEDUC = gsub("-1", NA, UNEDUC),
       uneduc = factor(UNEDUC, levels = uneduc_levels),
-      Region = REGION_4,
+      Region = REGION_5,
       TEAyy = tolower(TEA21),
       #      TEAyyNEC = tolower(TEAyyNEC),
       #      TEAyyOPP = tolower(TEAyyOPP)
