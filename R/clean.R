@@ -80,6 +80,7 @@ clean_gem <- function(x) {
     "WEIGHT_L",
     "Country_name",
     "REGION_4",
+    "REGION_5",
     "WBinc3rev",
     "WBinc_3",
     "WBINC_4",
